@@ -252,7 +252,8 @@ import time
 import usb
 
 import weewx.drivers
-from weeutil.weeutil import timestamp_to_string, log_traceback
+from weeutil.weeutil import timestamp_to_string
+from weeutil.log log_traceback
 from weewx.wxformulas import calculate_rain
 
 DRIVER_NAME = 'WH23xx'
