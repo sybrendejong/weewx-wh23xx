@@ -1,3 +1,9 @@
+0.xx 11jun2020
+* Fixed for Python3 support (changed all print statements with braces, Exception statements with 'as' instead of ',') [EdwinGH]
+
+0.xx 2019
+* fixed log_trace import issue [userbogd]
+
 0.14 10dec2017
 * hardware_name is a property
 
