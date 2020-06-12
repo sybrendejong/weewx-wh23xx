@@ -1,25 +1,30 @@
 weewx-wh23xx
 Copyright 2016 Matthew Wall
+Fixes: UserBogD, EdwinGH
 License: GPLv3
 
 This is a weewx driver for Fine Offset WH23xx hardware.  These stations are
-commonly available as Tycon TP2700 and Froggit WH4000 weather stations.
+commonly available as Tycon TP2700, Froggit WH4000, Renkforce WH2315 weather stations.
 
 Installation
 
-0) install weewx, select 'Simulator' driver
+0) install weewx, select 'Simulator' driver (as placeholder)
 
 http://weewx.com/docs/usersguide.htm#installing
 
-1) download the driver
+1a) download the driver
 
 wget -O weewx-wh23xx.zip https://github.com/matthewwall/weewx-wh23xx/archive/master.zip
+
+1b) get the updates from this fork
+
+TBD (replace wh23xx.py file)
 
 2) install the driver
 
 sudo wee_extension --install weewx-wh23xx.zip
 
-3) configure the driver
+3) configure the driver (now select wh23xx, it should appear in the list of drivers)
 
 sudo wee_config --reconfigure
 
