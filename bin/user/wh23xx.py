@@ -1055,7 +1055,7 @@ if __name__ == '__main__':
                         raw = s._read_eeprom(i, 0x20)
                         print("%04x" % i, _fmt(raw[:size]))
                         break
-                    except Exception, e:
+                    except Exception as e:
                         print("failed read %d of 3 for 0x%04x: %s" % (n+1, i, e))
                         print("waiting 3 seconds before retry")
                         time.sleep(3)
