@@ -14,11 +14,7 @@ http://weewx.com/docs/usersguide.htm#installing
 
 1a) download the driver
 
-wget -O weewx-wh23xx.zip https://github.com/matthewwall/weewx-wh23xx/archive/master.zip
-
-1b) get the updates from this fork
-
-TBD (replace wh23xx.py file)
+wget -O weewx-wh23xx.zip https://github.com/EdwinGH/weewx-wh23xx/archive/master.zip
 
 2) install the driver
 
