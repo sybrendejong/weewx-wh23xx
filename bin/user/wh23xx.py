@@ -467,7 +467,7 @@ class WH23xxDriver(weewx.drivers.AbstractDevice):
         pkt['outHumidity'] = data.get('out_humidity', {}).get('value')
         pkt['inTemp'] = data.get('in_temp', {}).get('value')
         pkt['outTemp'] = data.get('out_temp', {}).get('value')
-        pkt['pressure'] = data.get('abs_baro', {}).get('value')
+        pkt['pressure'] = data.get('rel_baro', {}).get('value')
         pkt['luminosity'] = data.get('light', {}).get('value')
         pkt['uv_raw'] = data.get('uv', {}).get('value')
         pkt['UV'] = data.get('uvi', {}).get('value')
