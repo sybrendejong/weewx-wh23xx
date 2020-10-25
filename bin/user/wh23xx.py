@@ -649,7 +649,7 @@ class WH23xxStation(object):
     def _read_eeprom(self, addr, size):
         # initiate a read by sending the READ_EEPROM command.
         addr_lo = addr & 0xff
-        addr_hi = (addr / 256) & 0xff
+        addr_hi = int(addr / 256) & 0xff
         cmd = [WH23xxStation.READ_EEPROM, addr_lo, addr_hi, size]
         chksum = _calc_checksum(cmd)
         buf = [0x02, 0x05]
@@ -978,7 +978,7 @@ if __name__ == '__main__':
 
     def print_info(x, display_keys=None):
         keys = x.keys() if not display_keys else list(set(x.keys()) & set(display_keys))
-        keys.sort()
+        #keys.sort()
         for k in keys:
             print("%s: %s" % (k, x[k]))
 
